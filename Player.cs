@@ -6,26 +6,28 @@ using System.Threading.Tasks;
 
 namespace RPSLSproject
 {
-    public class Player
+    public abstract class Player
     {   
         //member variables
         public string name;
         public int score;
-        public string gesture;
+        public string action;
 
         // constructor
         public Player(string name , int score , string gesture)
         {
             this.name = name;
             this.score = score;
-            this.gesture = gesture;
+            this.action = gesture;
 
         //member methods
-             public string MethodName()
+        void MethodName()
             { 
-                System.Console.WriteLine('a method to find {0}', name); 
+                Console.WriteLine("a method to find {0}", name); 
             
             }
-        }
+
+            
+        }   
     }
 }
